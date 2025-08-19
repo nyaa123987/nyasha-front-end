@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+  --background: #11072e;
+  --foreground: #1f0a5e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #11072e;
+    --foreground: #1f0a5e;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.handwritten {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: white;
+}
+
+.navigation {
+  width: 500px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.list:hover {
+  text-decoration: underline;
+}
+
+.list:active {
+  opacity: 50%;
+}
+
+.navigation ul li.active a {
+  color: #7B1FEA;
+  font-weight: bold;
+}
