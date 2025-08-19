@@ -4,7 +4,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 export default function Footer() {
   return (
     <footer className="bg-[#11072e] text-white py-8 text-center">
-      <p className='text-[16px] md:text-[20px] pb-[2vh]'>Got a project in mind? Let's connect.</p>
+      <p className='text-[16px] md:text-[20px] pb-[2vh]'>Got a project in mind? Let&apos;s connect.</p>
       
         <div className="my-4 flex justify-center space-x-20 md:space-x-40">
 

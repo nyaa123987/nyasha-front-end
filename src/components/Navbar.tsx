@@ -25,23 +25,23 @@ export default function Navbar() {
           <ul className="hidden md:flex space-x-8 text-lg font-medium items-center">
 
             <li className={`list ${pathname === "/" ? "active" : ""}`}>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
 
             <li className={`list ${pathname === "/about" ? "active" : ""}`}>
-              <a href="/about">About</a>
+              <Link href="/Linkbout">About</Link>
             </li>
 
             <li className={`list ${pathname === "/certifications" ? "active" : ""}`}>
-              <a href="/certifications">Certificates</a>
+              <Link href="/certifications">Certificates</Link>
             </li>
 
             <li className={`list ${pathname === "/projects" ? "active" : ""}`}>
-              <a href="/projects">Projects</a>
+              <Link href="/projects">Projects</Link>
             </li>
 
             <li className={`list ${pathname === "/contact" ? "active" : ""}`}>
-              <a href="/contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
 
             <Button>resume</Button>

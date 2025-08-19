@@ -4,7 +4,7 @@ type Paragraph2Props = {
   onClick?: () => void;
 };
 
-export default function Button({ children, className = "", onClick }: Paragraph2Props) {
+export default function Button({ children, onClick }: Paragraph2Props) {
   return (
     <p
       onClick={onClick}

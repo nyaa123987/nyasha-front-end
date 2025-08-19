@@ -1,5 +1,5 @@
 import H1 from '../components/Heading1';
-import P from '../components/Paragraph';
+import Link from 'next/link';
 
 export default function AboutPage() {
   return (
@@ -9,21 +9,21 @@ export default function AboutPage() {
           <H1>About Me</H1>
           <p className="text-lg leading-relaxed pt-[2vh]">
             I am a passionate front‑end web developer currently studying at{" "}
-            <a href="https://uncommon.org" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+            <Link href="https://uncommon.org" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
               Uncommon.org
-            </a>
+            </Link>
             , where I continuously sharpen my skills and push my creative limits. I thrive on learning by doing, taking on challenging{" "}
-            <a href="/projects" className="underline underline-offset-4">
+            <Link href="/projects" className="underline underline-offset-4">
               projects
-            </a>{" "}
+            </Link>{" "}
             that push me to think critically, design intuitively, and deliver clean, efficient code. Alongside my core studies, I actively pursue online courses, earning multiple{" "}
-            <a href="/certifications" className="underline underline-offset-4">
+            <Link href="/certifications" className="underline underline-offset-4">
               certificates
-            </a>{" "}
+            </Link>{" "}
             that demonstrate my commitment to professional growth and mastery of modern web technologies. My expertise spans responsive UI design, mobile‑friendly development, and crafting practical, problem‑solving programs that bring ideas to life. I believe learning never stops, and I am eager to keep exploring new technologies, collaborating with like‑minded innovators, and making a lasting impact through code. If you’d like to work together or discuss how I can contribute to your team, feel free to{" "}
-            <a href="/contact" className="underline underline-offset-4">
+            <Link href="/contact" className="underline underline-offset-4">
               contact me
-            </a>
+            </Link>
             .
           </p>
         </section>

@@ -1,7 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import Button from "./Button";
 import H2 from './Heading2';
-import P from './Paragraph';
 import Link from 'next/link';
 
 type Project = {
