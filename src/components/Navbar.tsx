@@ -29,7 +29,7 @@ export default function Navbar() {
             </li>
 
             <li className={`list ${pathname === "/about" ? "active" : ""}`}>
-              <Link href="/Linkbout">About</Link>
+              <Link href="/about">About</Link>
             </li>
 
             <li className={`list ${pathname === "/certifications" ? "active" : ""}`}>
