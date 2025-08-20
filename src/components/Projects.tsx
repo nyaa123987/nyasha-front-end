@@ -14,8 +14,8 @@ type Project = {
 export default function Projects() {
   const projectsData: Project[] = [
       { title: 'Baker\'s Inn Website', descr: 'A multi-page website for Baker\'s Inn that is built using Next.js and TailwindCSS.', github: 'https://github.com/nyaa123987/Bakers-Inn', vercel: 'https://bakers-inn-git-main-nyashas-projects-0049bd2f.vercel.app', img: '/images/bakers-inn.png' },
-      { title: 'Tigzozo Media', descr: 'Agency site for Tigzozo Media with dark mode. Built with HTML, CSS and JavaScript.', github: 'https://github.com/nyaa123987/tigzozo-media', vercel: 'https://nyaa123987.github.io/tigzozo-media/', img: '/images/tigzozo.png' },
-      { title: 'Start Bootstrap', descr: 'A responsive site built with HTML and CSS, inspired by Start Bootstrap\'s Freelancer theme.', github: 'https://github.com/nyaa123987/StartBootstrap', vercel: 'https://nyaa123987.github.io/StartBootstrap/', img: '/images/start-bootstrap.png' },
+      { title: 'Tigzozo Media', descr: 'Agency site for Tigzozo Media. Built with HTML, CSS and JavaScript.', github: 'https://github.com/nyaa123987/tigzozo-media', vercel: 'https://nyaa123987.github.io/tigzozo-media/', img: '/images/tigzozo.png' },
+      { title: 'Start Bootstrap', descr: 'A responsive site built with HTML and CSS, inspired by Bootstrap\'s Freelancer theme.', github: 'https://github.com/nyaa123987/StartBootstrap', vercel: 'https://nyaa123987.github.io/StartBootstrap/', img: '/images/start-bootstrap.png' },
   ];
 
   return (
