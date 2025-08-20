@@ -39,7 +39,7 @@ export default function Hero() {
         </Button>
       </div>
 
-      <div className="hidden w-75 h-75 mx-auto mb-6 rounded overflow-hidden border-4 border-white shadow-lg">
+      <div className="w-75 h-75 mx-auto mb-6 rounded overflow-hidden border-4 border-white shadow-lg">
         <Image src="/images/nyasha.jpeg" alt="Nyasha Zimbudzana" width={50} height={50} className="w-full h-full object-cover" />
       </div>
     </section>
