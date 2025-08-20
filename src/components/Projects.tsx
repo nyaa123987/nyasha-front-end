@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCardHero";
 import Button from "./Button";
 import H2 from './Heading2';
 import Link from 'next/link';
