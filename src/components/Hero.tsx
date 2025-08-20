@@ -29,8 +29,8 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 text-center py-16 md:py-10 landscape:text-start landscape:w-[55%]">
-        <H><span className="text-start"><span className="handwritten">Hello!</span> I am<br /></span>Nyasha Zimbudzana</H>
+      <div className="relative z-10 text-center py-20 md:py-10 landscape:text-start landscape:w-[55%]">
+        <H><span className="text-start"><span className="handwritten text-[10px] md:text-xl">Hello!</span> I am<br /></span>Nyasha Zimbudzana</H>
         <p className="text-base md:text-2xl font-medium mb-8">
           Creative Front‑End Developer & Designer building elegant interfaces and high‑performance web apps.
         </p>

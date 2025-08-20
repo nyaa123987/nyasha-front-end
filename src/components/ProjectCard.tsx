@@ -14,7 +14,7 @@ export default function ProjectCard({ title, descr, github, vercel, img, onClick
   return (
     <div
       onClick={onClick}
-      className="px-[2%] py-[1vh] md:py-[2vh] flex flex-col w-[100%] items-center rounded-xl bg-[#1C0C4E] relative shadow-xl hover:shadow-[#2A0F75] transition"
+      className="px-[2%] py-[1vh] md:py-[2vh] flex flex-col w-[100%] items-center rounded md:rounded-xl bg-[#1C0C4E] relative shadow-xl hover:shadow-[#2A0F75] transition"
     >
       <div>
         <Image
@@ -22,7 +22,7 @@ export default function ProjectCard({ title, descr, github, vercel, img, onClick
           alt={descr}
           width={370}
           height={70}
-          className="object-cover rounded-xl"
+          className="object-cover rounded md:rounded-xl"
         />
       </div>
 
@@ -37,4 +37,3 @@ export default function ProjectCard({ title, descr, github, vercel, img, onClick
     </div>
   );
 }
- 

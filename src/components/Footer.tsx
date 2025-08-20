@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
         </div>
         
-      <p className='pt-[2vh]'>&copy; 2025 Nyasha Zimbudzana. All rights reserved.</p>
+      <p className='pt-[2vh] text-[12px] md:text-[16px]'>&copy; 2025 Nyasha Zimbudzana. All rights reserved.</p>
     </footer>
   );
 }

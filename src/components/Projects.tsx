@@ -22,22 +22,6 @@ export default function Projects() {
     <section className="max-w-7xl mx-auto px-[3%] md:px-8 py-16">
       <H2>My Projects</H2>
 
-      {/*<div className="grid grid-cols-3 gap-3 md:gap-10">
-        {[1, 2, 3].map((num) => (
-          <div
-            key={num}
-            className="bg-[#1C0C4E] rounded-xl shadow-xl px-[5%] py-[1vh] md:p-6 hover:shadow-[#2A0F75] transition"
-          >
-            <div className="h-25 md:h-40 bg-pink-300 rounded-lg mb-4 flex items-center justify-center text-2xl font-bold text-purple-900">
-              Project {num}
-            </div>
-            <P className="opacity-90">
-              Short description of project {num} goes here.
-            </P>
-          </div>
-        ))}
-      </div>*/}
-
       <div className="grid grid-cols-3 gap-3 md:gap-10">
         {projectsData.map((project, idx) => (
           <ProjectCard
