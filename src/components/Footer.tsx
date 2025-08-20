@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[#11072e] text-white py-8 text-center">
       <p className='text-[16px] md:text-[20px] pb-[2vh]'>Got a project in mind? Let&apos;s connect.</p>
       
-        <div className="my-4 flex justify-center space-x-20 md:space-x-40">
+        <div className="px-[3%] my-4 flex justify-center space-x-13 md:space-x-40">
 
           <div className='flex flex-col space-y-2 md:space-y-4 text-white text-[16px] md:text-[18px]'>
             <a href="https://github.com/nyaa123987" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-3'>
@@ -26,12 +26,12 @@ export default function Footer() {
           </div>
 
           <div className='flex flex-col space-y-2 md:space-y-4 text-white text-[16px] md:text-[18px]'>
-            <a href="#" target='_blank' rel='noopener noreferrer' className="flex items-center space-x-3">
+            <a href="#" target='_blank' rel='noopener noreferrer' className="flex items-center space-x-1 md:space-x-3">
               <FaPhoneAlt />
               <span className=' hover:underline'>+263 78 310 6031</span>
             </a>
 
-            <a href="#" target='_blank' rel='noopener noreferrer' className="flex items-center space-x-3">
+            <a href="#" target='_blank' rel='noopener noreferrer' className="flex items-center space-x-1 md:space-x-3">
               <FaPhoneAlt />
               <span className=' hover:underline'>+263 78 246 7216</span>
             </a>
