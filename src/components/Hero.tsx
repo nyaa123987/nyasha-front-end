@@ -5,7 +5,7 @@ import H from './Heading';
 
 export default function Hero() {
   return (
-    <section className="relative text-white w-full h-[85vh] md:h-[90vh] pt-[2vh] px-[3%] flex flex-col-reverse text-center justify-center landscape:flex-row landscape:items-center overflow-hidden">
+    <section className="relative text-white w-full h-[80vh] md:h-[90vh] pt-[2vh] px-[3%] flex flex-col-reverse text-center justify-center landscape:flex-row landscape:items-center overflow-hidden">
       
       {/* Portrait background image */}
       <div className="absolute inset-0 landscape:hidden z-0">

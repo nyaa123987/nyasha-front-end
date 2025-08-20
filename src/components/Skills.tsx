@@ -10,7 +10,7 @@ export default function Skills() {
         {skills.map((skill) => (
           <div
             key={skill}
-            className="px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-full bg-[#1d0b55] flex items-center justify-center md:font-semibold text-sm md:text-xl shadow-lg text-white"
+            className="px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-full bg-[#1d0b55] flex items-center justify-center md:font-semibold text-sm md:text-xl md:font-xl shadow-lg text-white"
           >
             {skill}
           </div>
