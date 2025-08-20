@@ -29,7 +29,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 text-center py-20 md:py-10 landscape:text-start landscape:w-[55%]">
+      <div className="relative z-10 text-center py-20 pb-10 md:pb-0 md:py-10 landscape:text-start landscape:w-[55%]">
         <H><span className="text-start"><span className="handwritten text-[10px] md:text-xl">Hello!</span> I am<br /></span>Nyasha Zimbudzana</H>
         <p className="text-base md:text-2xl font-medium mb-8">
           Creative Front‑End Developer & Designer building elegant interfaces and high‑performance web apps.
@@ -39,7 +39,7 @@ export default function Hero() {
         </Button>
       </div>
 
-      <div className="w-75 h-75 mx-auto mb-6 rounded overflow-hidden border-4 border-white shadow-lg">
+      <div className="hidden w-75 h-75 mx-auto mb-6 rounded overflow-hidden border-4 border-white shadow-lg">
         <Image src="/images/nyasha.jpeg" alt="Nyasha Zimbudzana" width={50} height={50} className="w-full h-full object-cover" />
       </div>
     </section>
