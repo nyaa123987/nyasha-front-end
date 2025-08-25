@@ -52,7 +52,6 @@ export default function ContactPage() {
             Got a project or opportunity? Let’s talk!
           </p>
 
-          {/* Message Form */}
           <form
             onSubmit={sendEmail}
             className="bg-transparent border rounded-xl p-6 space-y-4 text-left"
@@ -100,15 +99,14 @@ export default function ContactPage() {
             </button>
           </form>
 
-          {/* Contact Details */}
           <div className="bg-transparent border rounded-xl p-6 space-y-3 text-left">
             <h2 className="text-xl font-semibold border-b border-white/20 pb-2">
               Contact Details
             </h2>
             <p>
               <span className="font-semibold">Email:</span>{" "}
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazee07@gmail.com" target='_blank' rel='noopener noreferrer' className="hover:underline">
-                nyashazee07@gmail.com
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazim07@gmail.com" target='_blank' rel='noopener noreferrer' className="hover:underline">
+                nyashazim07@gmail.com
               </a>
             </p>
             <p>
@@ -132,7 +130,6 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Success Popup */}
         {success && (
           <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
             <div className="bg-white text-center p-8 rounded-xl shadow-lg">

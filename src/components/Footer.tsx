@@ -19,7 +19,7 @@ export default function Footer() {
               <span className=' hover:underline'>LinkedIn</span>
             </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazee07@gmail.com" target='_blank' rel='noopener noreferrer' className="flex items-center space-x-3">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazim07@gmail.com" target='_blank' rel='noopener noreferrer' className="flex items-center space-x-3">
               <HiOutlineMail />
               <span className=' hover:underline'>Email</span>
             </a>

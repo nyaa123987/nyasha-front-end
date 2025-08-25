@@ -35,7 +35,7 @@ export default function Hero() {
           Creative Front‑End Developer & Designer building elegant interfaces and high‑performance web apps.
         </p>
         <Button>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazee07@gmail.com" target='_blank' rel='noopener noreferrer'>email me</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazim07@gmail.com" target='_blank' rel='noopener noreferrer'>email me</a>
         </Button>
       </div>
 
