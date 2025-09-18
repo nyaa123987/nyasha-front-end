@@ -30,8 +30,8 @@ export default function ProjectCard({ title, descr, github, vercel, img, onClick
         <P>{title}</P>
         <h1 className='text-[10px] md:text-[14px] pb-[1vh]'>{descr}</h1>
         <div className='flex justify-center gap-3 items-center text-[12px] md:text-[16px] mt-[2vh]'>
-          <a href={github} target="_blank" rel="noopener noreferrer" className='hover:underline pr-3 border-r border-white'>View on Github</a>
-          <a href={vercel} target="_blank" rel="noopener noreferrer" className='hover:underline pl-1'>Live Preview</a>
+          <a href={github} target="_blank" rel="noopener noreferrer" className='hover:underline pr-3 border-r border-white text-[12px] md:text-base'>View on Github</a>
+          <a href={vercel} target="_blank" rel="noopener noreferrer" className='hover:underline pl-1 text-[12px] md:text-base'>Live Preview</a>
         </div>
       </div>
     </div>

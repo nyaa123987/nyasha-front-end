@@ -48,7 +48,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-gradient-to-br from-[#11072e] to-[#1f0a5e] text-white px-8 py-20 relative">
+      <main className="min-h-screen bg-gradient-to-br from-[#11072e] to-[#1f0a5e] text-white px-3 md:px-8 py-20 relative">
         <section className="max-w-xl mx-auto text-center space-y-6">
           <H1>Contact Me</H1>
           <p className="text-lg opacity-90 py-[1.5vh]">
@@ -102,7 +102,7 @@ export default function ContactPage() {
             </button>
           </form>
 
-          <div className="bg-transparent border rounded-xl p-6 space-y-3 text-left">
+          <div className="bg-transparent border rounded-xl p-3 md:p-6 space-y-3 text-left">
             <h2 className="text-xl font-semibold border-b border-white/20 pb-2">
               Contact Details
             </h2>

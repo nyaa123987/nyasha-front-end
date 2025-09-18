@@ -9,7 +9,7 @@ export default function Navigation() {
                     N.Z.
                 </Link>
             </div>
-            <div className="flex justify-center items-center space-x-8 text-[10px] md:text-lg md:font-medium">
+            <div className="flex justify-center items-center space-x-3 md:space-x-8 text-[10px] md:text-lg md:font-medium">
                 <Link href="/" className="hover:underline active:opacity-[0.5]">Home</Link>
                 <Link href="/about" className="hover:underline active:opacity-[0.5]">About</Link>
                 <Link href="/certifications" className="hover:underline active:opacity-[0.5]">Certificates</Link>
