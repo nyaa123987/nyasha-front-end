@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import H from './Heading';
+import ResumeModal from "./ResumeModal";
 
 export default function Hero() {
   return (
@@ -34,9 +35,17 @@ export default function Hero() {
         <p className="text-base md:text-2xl font-medium mb-8">
           Creative Front‑End Developer & Designer building elegant interfaces and high‑performance web apps.
         </p>
-        <Button>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazim07@gmail.com" target='_blank' rel='noopener noreferrer'>email me</a>
-        </Button>
+
+        <div className="flex gap-3 justify-center md:justify-start">
+          <Button>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazim07@gmail.com" target='_blank' rel='noopener noreferrer'>email me</a>
+          </Button>
+
+          <button className="capitalize cursor-pointer text-[12px] md:text-xl px-2 py-1 md:px-4 md:py-2 bg-white text-[#7B1FEA] rounded shadow-lg hover:bg-[#7B1FEA] hover:text-white transition active:opacity-[0.5] landscape:hidden">
+            <ResumeModal />
+          </button>
+        </div>
+        
       </div>
 
       <div className="w-75 h-75 mx-auto mb-6 rounded overflow-hidden border-4 border-white shadow-lg">
