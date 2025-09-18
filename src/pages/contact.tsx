@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import { CheckCircle } from "lucide-react";
 import H1 from "../components/Heading1";
 
@@ -9,11 +8,13 @@ export default function ContactPage() {
   const [sending, setSending] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!form.name || !form.email || !form.message) {
@@ -23,24 +24,26 @@ export default function ContactPage() {
 
     setSending(true);
 
-    emailjs
-      .send(
-        "service_fyrx92r",
-        "template_ghql61b",
-        form,
-        "cANetA5Mz2L5KMn8y"
-      )
-      .then(() => {
-        setSending(false);
+    try {
+      const res = await fetch("https://formspree.io/f/mzzalaad", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (res.ok) {
         setSuccess(true);
         setForm({ name: "", email: "", message: "" });
         setTimeout(() => setSuccess(false), 3000);
-      })
-      .catch((err) => {
-        setSending(false);
+      } else {
         alert("Failed to send message. Please try again.");
-        console.error(err);
-      });
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -105,25 +108,45 @@ export default function ContactPage() {
             </h2>
             <p>
               <span className="font-semibold">Email:</span>{" "}
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazim07@gmail.com" target='_blank' rel='noopener noreferrer' className="hover:underline">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nyashazim07@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 nyashazim07@gmail.com
               </a>
             </p>
             <p>
               <span className="font-semibold">LinkedIn:</span>{" "}
-              <a href="https://www.linkedin.com/in/nyasha-zimbudzana-10861834b/" target='_blank' rel='noopener noreferrer' className="hover:underline">
+              <a
+                href="https://www.linkedin.com/in/nyasha-zimbudzana-10861834b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 Nyasha Zimbudzana
               </a>
             </p>
             <p>
               <span className="font-semibold">GitHub:</span>{" "}
-              <a href="https://github.com/nyaa123987" target='_blank' rel='noopener noreferrer' className="hover:underline">
+              <a
+                href="https://github.com/nyaa123987"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 github.com/nyaa123987
               </a>
             </p>
             <p>
               <span className="font-semibold">Phone:</span>{" "}
-              <a href="#" target='_blank' rel='noopener noreferrer' className="hover:underline">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 +263 78 310 6031 / +263 78 246 7216
               </a>
             </p>
