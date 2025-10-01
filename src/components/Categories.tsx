@@ -3,7 +3,7 @@ import P2 from './Paragraph2';
 
 export default function Categories() {
   return (
-    <main className="flex justify-between px-[3%] md:px-[10%] py-[20vh] md:pt-20 md:pb-40">
+    <main data-aos="fade-up" className="flex justify-between px-[3%] md:px-[10%] py-[20vh] md:pt-20 md:pb-40">
       <div>
         <H3>React & Next.js</H3>
         <P2>Modern, high performance web applications.</P2>

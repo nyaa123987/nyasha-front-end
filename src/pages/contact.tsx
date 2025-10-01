@@ -50,12 +50,12 @@ export default function ContactPage() {
     <>
       <main className="min-h-screen bg-gradient-to-br from-[#11072e] to-[#1f0a5e] text-white px-3 md:px-8 py-20 relative">
         <section className="max-w-xl mx-auto text-center space-y-6">
-          <H1>Contact Me</H1>
-          <p className="text-lg opacity-90 py-[1.5vh]">
+          <H1 data-aos="fade-up">Contact Me</H1>
+          <p data-aos="fade-up" className="text-lg opacity-90 py-[1.5vh]">
             Got a project or opportunity? Let’s talk!
           </p>
 
-          <form
+          <form  data-aos="zoom-in"
             onSubmit={sendEmail}
             className="bg-transparent border rounded-xl p-6 space-y-4 text-left"
           >
@@ -102,7 +102,7 @@ export default function ContactPage() {
             </button>
           </form>
 
-          <div className="bg-transparent border rounded-xl p-3 md:p-6 space-y-3 text-left">
+          <div data-aos="fade-up" className="bg-transparent border rounded-xl p-3 md:p-6 space-y-3 text-left">
             <h2 className="text-xl font-semibold border-b border-white/20 pb-2">
               Contact Details
             </h2>

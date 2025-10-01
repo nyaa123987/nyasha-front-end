@@ -1,9 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import dynamic from "next/dynamic"
-
-const ResumeModal = dynamic(() => import("./ResumeModal"), { ssr: false });
 
 export default function Navigation() {
   return (
@@ -22,10 +19,18 @@ export default function Navigation() {
         <Link href="/projects" className="hover:underline active:opacity-[0.5]">Projects</Link>
         <Link href="/contact" className="hover:underline active:opacity-[0.5]">Contact</Link>
       </div>
+      
+      <button className="hidden md:flex items-center">
+        <a
+          href="/Nyasha-Zimbudzana-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="capitalize cursor-pointer text-[12px] md:text-xl px-2 py-1 md:px-4 md:py-2 bg-white text-[#7B1FEA] rounded shadow-lg hover:bg-[#7B1FEA] hover:text-white transition active:opacity-[0.5]"
+        >
+          resume
+        </a>
+      </button>
 
-      <div className="hidden md:flex justify-center items-center">
-        <ResumeModal />
-      </div>
     </header>
   );
 }

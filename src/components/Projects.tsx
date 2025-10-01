@@ -20,9 +20,9 @@ export default function Projects() {
 
   return (
     <section className="max-w-7xl mx-auto px-[3%] md:px-8 py-16">
-      <H2>My Projects</H2>
+      <H2 data-aos="fade-up">My Projects</H2>
 
-      <div className="grid grid-cols-3 gap-3 md:gap-10">
+      <div data-aos="zoom-in" className="grid grid-cols-3 gap-3 md:gap-10">
         {projectsData.map((project, idx) => (
           <ProjectCard
             key={idx}
@@ -36,7 +36,7 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="flex justify-center pt-8">
+      <div data-aos="fade-up" className="flex justify-center pt-8">
         <Link href="/projects"><Button>View More</Button></Link>
       </div>
     </section>

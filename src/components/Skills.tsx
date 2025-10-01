@@ -5,8 +5,8 @@ export default function Skills() {
 
   return (
     <section className="max-w-7xl mx-auto px-8 py-16 md:py-40">
-      <H2>Skills & Tools</H2>
-      <div className="mt-4 md:mt-2 flex flex-wrap justify-center gap-4 md:gap-10">
+      <H2 data-aos="fade-up">Skills & Tools</H2>
+      <div data-aos="zoom-in" className="mt-4 md:mt-2 flex flex-wrap justify-center gap-4 md:gap-10">
         {skills.map((skill) => (
           <div
             key={skill}

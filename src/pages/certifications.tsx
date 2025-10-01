@@ -19,9 +19,9 @@ export default function Certifications() {
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-[#11072e] to-[#1f0a5e] text-center text-white px-[3%] py-8 md:py-15">
-      <H1>My Certificates</H1>
+      <H1 data-aos="fade-up">My Certificates</H1>
 
-      <div className="pt-[5vh] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-5 md:gap-10">
+      <div data-aos="zoom-in" className="pt-[5vh] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-5 md:gap-10">
         {certificatesData.map((certificate, idx) => (
           <CertificateCard
             key={idx}

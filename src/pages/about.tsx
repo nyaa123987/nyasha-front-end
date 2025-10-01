@@ -6,8 +6,8 @@ export default function AboutPage() {
     <>
       <main className="min-h-screen bg-gradient-to-br from-[#11072e] to-[#1f0a5e] text-white px-3 md:px-8 py-10 md:py-20">
         <section className="max-w-4xl mx-auto text-center space-y-6">
-          <H1>About Me</H1>
-          <p className="text-lg leading-relaxed pt-[2vh]">
+          <H1 data-aos="fade-up">About Me</H1>
+          <p data-aos="zoom-in" className="text-lg leading-relaxed pt-[2vh]">
             I am a passionate front‑end web developer currently studying at{" "}
             <Link href="https://uncommon.org" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
               Uncommon.org
