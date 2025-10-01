@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Button from "./Button";
 import H from './Heading';
-import ResumeModal from "./ResumeModal";
 
 export default function Hero() {
   return (
