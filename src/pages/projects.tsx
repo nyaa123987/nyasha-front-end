@@ -11,7 +11,7 @@ type Project = {
 
 export default function ProjectsPage() {
   const projectsData: Project[] = [
-    { title: 'Ever After - Wedding Planner App', descr: 'Coming soon...', github: 'https://github.com/nyaa123987/wedding-planner', vercel: 'https://wedding-planner-omega-flame.vercel.app/', img: '/images/ever-after.png' },
+    { title: 'Ever After', descr: 'A wedding planner app that guides couples through the entire process of planning a wedding.', github: 'https://github.com/nyaa123987/wedding-planner', vercel: 'https://wedding-planner-omega-flame.vercel.app/', img: '/images/ever-after.png' },
     { title: 'Baker\'s Inn Website', descr: 'A website for Baker\'s Inn that is built using Next.js and TailwindCSS.', github: 'https://github.com/nyaa123987/Bakers-Inn', vercel: 'https://bakers-inn-git-main-nyashas-projects-0049bd2f.vercel.app', img: '/images/bakers-inn.png' },
     { title: 'Tigzozo Media', descr: 'Agency site for Tigzozo Media with dark mode. Built with HTML, CSS and JavaScript.', github: 'https://github.com/nyaa123987/tigzozo-media', vercel: 'https://nyaa123987.github.io/tigzozo-media/', img: '/images/tigzozo.png' },
     { title: 'Stopwatch', descr:'Clean, responsive, and fully functional stopwatch app, built using React.js.', github: 'https://github.com/nyaa123987/stopwatch', vercel:'https://stopwatch-7i9rloekh-nyashas-projects-0049bd2f.vercel.app/', img: '/images/stopwatch.png' },
